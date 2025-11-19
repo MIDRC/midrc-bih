@@ -1,0 +1,128 @@
+version: 0.0.1
+
+tool:
+  name: MIDRC Biomedical Imaging Hub
+  repo_url: https://github.com/MIDRC/midrc-bih
+  tool_homepage: https://imaging-hub.data-commons.org/
+  documentation_url: https://gen3.org/products/data-hubs/
+  tool_type: 
+  - WebApp
+  - DataCatalog
+  - DatabasePortal
+  - WebAPI
+  - CLI
+  - Notebook
+  tool_notes: MIDRC BIH is an instance of the Gen3 front-end-framework and data mesh/hub architecture for the medical imaging community.
+
+llm:
+  usesLlm: false
+  bringOwnKey: false
+
+input:
+  - name: Imaging structured 1
+    dataCategory: imaging
+    dataClass: structured
+    dataType: radiology
+    format:
+      - json
+      - tsv
+    dataStandard:
+      - DICOM
+      - LOINC
+    proprietary: false
+    source: https://imaging-hub.data-commons.org/app/MetadataDictionary
+  - name: Clinical structured 1
+    dataCategory: clinical-phenotype
+    dataClass: structured
+    dataType: clinical-ehr
+    format:
+      - json
+    dataStandard:
+      - NCIT
+      - OMOP
+      - SNOMED
+    proprietary: false
+    source: https://imaging-hub.data-commons.org/app/MetadataDictionary
+
+output:
+  - name: Imaging structured 1
+    dataCategory: imaging
+    dataClass: 
+    - structured
+    - data-viz
+    dataType: radiology
+    format:
+      - tsv
+      - json
+    dataStandard:
+      - DICOM
+    proprietary: false
+    source: https://data.midrc.org/
+
+license:
+  license_type: Apache-2.0
+  link: https://github.com/MIDRC/midrc-bih/blob/main/LICENSE
+
+funding:
+  source: Developed for MIDRC creation with NIBIB, and then generalized and converted to tool via ARPA-H BDF
+  agreement: Not specified
+  link: ""
+
+domains:
+  - Imaging
+
+credit:
+  - name: MIDRC
+    role: Developer
+    org: Medical Imaging and Data Resource Center
+    url: https://www.midrc.org/
+
+target_users:
+  primary_user:
+    user_type: researcher
+    technical_literacy_level:
+      - novice
+      - intermediate
+      - advanced
+      - expert
+    biomedical_literacy_level:
+      - novice
+      - intermediate
+      - advanced
+      - expert
+  secondary_user:
+    user_type: data-curator
+    technical_literacy_level:
+      - intermediate
+      - advanced
+      - expert
+    biomedical_literacy_level:
+      - intermediate
+      - advanced
+      - expert
+
+maturity:
+  beginning_maturity: 1
+  current_maturity: 8
+
+media: 
+  [
+    { "link": "https://youtu.be/fpu8dbZDz0o?si=GndViAUibg_874l2" },
+    { "link": "https://youtu.be/_RgGkNnNm4g?si=4q-f4oPiYoqxD3mr" }
+  ]
+
+collaborations: []
+
+api:
+  api_info:
+    api_request:
+      request_type: POST
+      endpoint: /guppy/graphql
+      parameters: 
+      - query
+      - variables
+
+query_language:
+  query_implementation: True
+  query_type: graphQL
+
