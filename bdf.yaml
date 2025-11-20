@@ -5,13 +5,7 @@ tool:
   repo_url: https://github.com/MIDRC/midrc-bih
   tool_homepage: https://imaging-hub.data-commons.org/
   documentation_url: https://gen3.org/products/data-hubs/
-  tool_type: 
-  - WebApp
-  - DataCatalog
-  - DatabasePortal
-  - WebAPI
-  - CLI
-  - Notebook
+  tool_type: WebApp
   tool_notes: MIDRC BIH is an instance of the Gen3 front-end-framework and data mesh/hub architecture for the medical imaging community.
 
 llm:
@@ -47,9 +41,7 @@ input:
 output:
   - name: Imaging structured 1
     dataCategory: imaging
-    dataClass: 
-    - structured
-    - data-viz
+    dataClass: structured
     dataType: radiology
     format:
       - tsv
@@ -105,7 +97,7 @@ maturity:
   beginning_maturity: 1
   current_maturity: 8
 
-media: 
+media:
   [
     { "link": "https://youtu.be/fpu8dbZDz0o?si=GndViAUibg_874l2" },
     { "link": "https://youtu.be/_RgGkNnNm4g?si=4q-f4oPiYoqxD3mr" }
@@ -114,15 +106,7 @@ media:
 collaborations: []
 
 api:
-  api_info:
-    api_request:
-      request_type: POST
-      endpoint: /guppy/graphql
-      parameters: 
-      - query
-      - variables
-
+  api_request: [{"request_type":"POST", "endpoint":"/guppy/graphql", "parameters":[{"name":"query", "example":"{ imaging_study { StudyInstanceUID StudyDescription } }", "required":true}, {"name":"variables", "example":"{'studyId':'12345'}", "required":false}]}]
 query_language:
   query_implementation: True
-  query_type: graphQL
-
+  query_type: GraphQL
