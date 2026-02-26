@@ -1,7 +1,17 @@
 
 
-This is the NextJS Application for BIH's data commons.
+This is the NextJS Application for the MIDRC BDF Imaging Hub.
 
+## Supported Runtime Versions
+
+This project requires:
+
+- Node.js >= 22.11.0
+- npm >= 10.9.0
+- TypeScript ^5.9.3
+- Python >= 3.6
+
+The project is built with Next.js ^15.5.5.
 
 ## Getting Started
 Gen3 Data Commons using the Gen3 Frontend Framework is a matter of the following:
