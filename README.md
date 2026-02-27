@@ -1,5 +1,3 @@
-
-
 This is the NextJS Application for the MIDRC BDF Imaging Hub.
 
 ## Supported Runtime Versions
@@ -112,3 +110,4 @@ If you use this flag, it is recommended that you carefully review the changes an
 You will see merge conflicts. In general: **take the remote's version for everything except the config files**, as those are customized to the commons config. Resolve any remaining config issues and open a PR.
 Test the new common by running it locally or in a staging environment.
 
+If you'd like to contribute to this project, check out [CONTRIBUTING.md](CONTRIBUTING.md).
