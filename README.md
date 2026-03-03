@@ -86,6 +86,11 @@ You build a Docker image by:
 ```bash
 docker build .
 ```
+
+## REST-API
+
+The tools utilized for MIDRC interact with the Gen3 API. For more information, see the [service specifications](https://docs.gen3.org/gen3-resources/user-guide/using-api/) of the Gen3 API.
+
 ## Updating a forked commons
 
 The following steps usually apply to update a forked commons.
