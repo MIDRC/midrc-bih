@@ -91,6 +91,10 @@ docker build .
 
 The tools utilized for MIDRC interact with the Gen3 API. For more information, see the [service specifications](https://docs.gen3.org/gen3-resources/user-guide/using-api/) of the Gen3 API.
 
+## Harmonization
+
+MIDRC BIH leverages a data model in order to harmonize the discovery metadata aggregated across the data mesh. If you would like to view some sample submission templates, you can find them in [this directory](https://github.com/MIDRC/midrc-bih/tree/c4db32fa825170d4ed76a63a02a1a75188c8ef66/submission_templates). Including for example, dataset.json, subject.json, etc.
+
 ## Updating a forked commons
 
 The following steps usually apply to update a forked commons.
