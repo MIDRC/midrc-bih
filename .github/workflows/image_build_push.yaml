@@ -2,6 +2,9 @@ name: Build Image and Push to Quay
 
 on: push
 
+permissions:
+  contents: read
+
 jobs:
   Security:
     name: Security Pipeline
