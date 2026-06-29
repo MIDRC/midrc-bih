@@ -147,4 +147,9 @@ You will see merge conflicts. In general: **take the remote's version for everyt
 Test the new common by running it locally or in a staging environment.
 
 If you'd like to contribute to this project, check out [CONTRIBUTING.md](CONTRIBUTING.md).
-w
+
+## OpenSSF Best Practices
+
+This project is working towards meeting the Open Source Security Foundation (OpenSSF) best practices.
+
+[![OpenSSF Best Practices](https://www.bestpractices.dev/projects/13439/badge)](https://www.bestpractices.dev/projects/13439)
