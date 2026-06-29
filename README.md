@@ -97,7 +97,18 @@ The tools utilized for MIDRC interact with the Gen3 API. For more information, s
 
 
 ## Architecture
----
+
+General Gen3 architecture can be found in the Gen3 Developer Guide at:
+
+https://docs.gen3.org/gen3-resources/developer-guide/architecture/
+
+### Gen3 Data Commons Architecture
+
+![Gen3 Data Commons Architecture](docs/images/gen3_data_commons_arch.png) 
+
+### Gen3 Data Hub Architecture
+
+![MIDRC Imaging Hub Architecture](docs/images/gen3_interop_arch.png)
 
 ```mermaid
 graph LR
@@ -136,3 +147,4 @@ You will see merge conflicts. In general: **take the remote's version for everyt
 Test the new common by running it locally or in a staging environment.
 
 If you'd like to contribute to this project, check out [CONTRIBUTING.md](CONTRIBUTING.md).
+w
