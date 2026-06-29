@@ -112,10 +112,10 @@ https://docs.gen3.org/gen3-resources/developer-guide/architecture/
 
 ```mermaid
 graph LR
-  DataSrc[Imaging Data Source] --> Ingest[Data Ingestion & Processing]
-  Ingest --> Store[Storage (DICOM, Filesystem, DB)]
-  Store --> Compute[Analysis / Model (PyTorch, Scikit-learn)]
-  Compute --> Report[Results & Reporting]
+  DataSrc[Imaging Data Source] --> Ingest[Data Ingestion and Processing]
+  Ingest --> Store[Storage: DICOM, Filesystem, DB]
+  Store --> Compute[Analysis and Model: PyTorch, Scikit-learn]
+  Compute --> Report[Results and Reporting]
 ```
 
 ## Harmonization
