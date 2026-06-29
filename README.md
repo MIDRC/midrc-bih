@@ -97,7 +97,11 @@ The tools utilized for MIDRC interact with the Gen3 API. For more information, s
 
 
 ## Architecture
----
+
+General Gen3 architecture can be found in the Gen3 Developer Guide at:
+
+https://docs.gen3.org/gen3-resources/developer-guide/architecture/
+
 
 ```mermaid
 graph LR
