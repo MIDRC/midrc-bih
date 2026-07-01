@@ -24,7 +24,7 @@
     "@fontsource/poppins": "^5.2.7",
     "@fontsource/source-sans-pro": "^5.2.5",
     "@gen3/core": "0.11.48",
-    "@gen3/frontend": "0.11.48",
+    "@gen3/frontend": "0.11.62",
     "@grafana/faro-react": "^1.9.1",
     "@grafana/faro-web-sdk": "^1.9.1",
     "@grafana/faro-web-tracing": "^1.9.1",
